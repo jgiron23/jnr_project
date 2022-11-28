@@ -32,6 +32,7 @@ from frame
 
 cursor = cnx.cursor()
 # Insert Dataframe into SQL Server:
+cursor.execute('truncate table dbo.tblRJTB_INVENTORY_SOURCE')
 for index, row in frame.iterrows():
      cursor.execute("INSERT INTO dbo.tblRJTB_INVENTORY_SOURCE values(?,?,?,?)", row.DESCRIPTION,row.SKU,row.TOTAL,row.OBJECT_NAME)
 cnx.commit()
