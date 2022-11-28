@@ -1,0 +1,1 @@
+"C:/Program Files/Python39/python.exe" "c:/Users/Juan Giron/Documents/git_repo/jnr_project/python scripts/table_insert_job.py"
